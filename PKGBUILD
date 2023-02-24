@@ -32,7 +32,9 @@ source=("git+https://github.com/anbox/anbox.git"
 	'org.anbox.service'
 	'dev-binderfs.mount'
 	'anbox-bridge.network'
-	'anbox-bridge.netdev')
+	'anbox-bridge.netdev'
+  'fix.patch'
+  )
 sha256sums=('SKIP'
             'c1071203defdeaee56122913a6d7e67ac496c889a0c59cb889d94a58bc655bfa'
             '7c0626afaf1ce004ac2c57cd89db393f9a6ba21f1087001d15278a7bd79c8219'
@@ -50,7 +52,8 @@ sha256sums=('SKIP'
             '74e2208e0c03e5f21be3ff54b58160a172e3768a80c41726c06b4ab8cc9288dd'
             'c7e9958a9cff1191dca0d50b0ea8392d7728490e56ffb38a475ba516a09a2109'
             '44899328725667041e6e84912da81c1d0147b708006eb2c2bb6503f271629ff0'
-            '559190df4d6d595480b30d8b13b862081fc4aac52790e33eb24cf7fbcb8003b8')
+            '559190df4d6d595480b30d8b13b862081fc4aac52790e33eb24cf7fbcb8003b8'
+            'SKIP')
 
 pkgver() {
   cd "${pkgname%*-git}"
